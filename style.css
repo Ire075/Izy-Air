@@ -763,6 +763,10 @@ nav.hidden {
     content: "";
     width: 12.5%; 
     }
+    .testimonial img{
+        width: 100px;
+        height: 100px;
+    }
     /***FOOTER*****/
     #cols{
         flex-direction: column;
