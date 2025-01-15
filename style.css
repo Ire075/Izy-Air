@@ -312,7 +312,6 @@ nav.hidden {
 
 .testimonial{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
@@ -763,11 +762,6 @@ nav.hidden {
     .heading-line::after {
     content: "";
     width: 12.5%; 
-    }
-    .testimonial {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     .testimonial img{
         width: 120px;
