@@ -766,8 +766,6 @@ nav.hidden {
     .testimonial img{
         width: 120px;
         height: 120px;
-        display: grid;
-        place-self: center;
     }
     /***FOOTER*****/
     #cols{
