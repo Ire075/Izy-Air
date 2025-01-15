@@ -736,7 +736,10 @@ nav.hidden {
     .controls button{
         font-size: 3rem;
     }
-
+    .testimonial img{
+        width: 100px;
+        height: 100px;
+    }
     /****************************CONTACT FORM (Leave a message)***************/
     .contact-form{
         padding: 2.5% 3%;
