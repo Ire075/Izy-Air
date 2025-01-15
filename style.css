@@ -209,6 +209,11 @@ nav.hidden {
     justify-content: center;
     margin-bottom: 10%;
 }
+.imp-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .imp-h{
     position: relative;
     display: grid;
