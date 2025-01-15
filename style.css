@@ -53,6 +53,7 @@ h2, .heading{
 a{
     cursor: pointer;
     font-weight: 200;
+    text-decoration: none;
 }
 button{
     cursor: pointer;
