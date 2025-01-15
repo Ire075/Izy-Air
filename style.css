@@ -647,7 +647,7 @@ nav.hidden {
         color: var(--light-text);
     }
     .ph-menu a{
-        padding: 20px 35px;
+        padding: 25px 50px;
         background: var(--color-red);
         transition: 0.5s ease;
     }
@@ -660,7 +660,7 @@ nav.hidden {
         color: var(--light-text);
         cursor: pointer;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     .hidden {
         display: none;
