@@ -763,6 +763,11 @@ nav.hidden {
     content: "";
     width: 12.5%; 
     }
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .testimonial img{
         width: 120px;
         height: 120px;
