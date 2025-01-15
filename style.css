@@ -327,6 +327,7 @@ nav.hidden {
     border-radius: 50%;
     display: flex;
     justify-self: center;
+    align-items: center;
 }
 .t-name{
     text-align: center;
