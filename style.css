@@ -764,8 +764,10 @@ nav.hidden {
     width: 12.5%; 
     }
     .testimonial img{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
+        display: grid;
+        place-self: center;
     }
     /***FOOTER*****/
     #cols{
