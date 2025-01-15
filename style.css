@@ -20,6 +20,7 @@
 }
 body{
     background: var(--website-body-color);
+    width: 100vw;
 }
 h1{
     font-size: 4rem;
