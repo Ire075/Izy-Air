@@ -16,6 +16,7 @@
     --light-text: #f5f0f0;
     --color-red: #c20d0d;
     --dark-text: #000;
+    --website-grey-color: rgb(187, 184, 184);
     
 }
 body{
@@ -240,6 +241,7 @@ nav.hidden {
     height: 60vh;
     margin: 15vh;
 }
+
 .content-write .write-up{
     text-align: left;
     display: flex;
@@ -252,6 +254,8 @@ nav.hidden {
     color: var(--dark-text);
     border: 1px solid var(--website-dark-color);
 }
+
+
 .write-up-h{
     position: relative;
     text-align: left;
@@ -267,7 +271,7 @@ nav.hidden {
     
 }
 
-.content-write .content-write-img {
+.content-write-img {
     width: 50%;
     overflow: hidden;
 }
@@ -296,6 +300,9 @@ nav.hidden {
     background: linear-gradient(to right, var(--website-dark-color), transparent), url(img/content-special-small.jpg);
     background-position: center;
     background-size: cover;
+}
+.content-special-nopic{
+    background: var(--website-dark-color);
 }
 .content-special-small{
     width: 40%;
