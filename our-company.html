@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Izy Air | Our Company</title>
 </head>
+<body>
 <!-----------------------------NAVBAR AND BANNER--------------------->
 <header style="background: url(img/Izy-Air-main-backdrop-2.webp); background-position: center; background-size: cover;">
     <nav id="navbar">
@@ -47,6 +48,7 @@
         </div>
     </div>
 </header>
+<main>
 <!-------------IMPORTANT POINTS IS ALSO ON OUR COMPANY PAGE------------------->
 <div class="important-points anim">
     <div class="important-point">
@@ -155,6 +157,139 @@
             Beyond their expertise, our team is united by a genuine commitment to personalized service. They understand that every client is unique, taking the time to tailor each experience to your specific needs and preferences. Whether it’s customizing your flight plan, providing world-class in-flight amenities, or ensuring the highest safety standards, our team is here to support you every step of the way, delivering unparalleled care and attention.
         </p>
 </div>
+</div>
+
+<div class="h-testimonial">
+            <div class="heading heading-line anim">What Our Customers Say</div>
+            <div class="testimonials">
+                <div class="testimonial anim active">
+                    <div class="testimonial-img">
+                        <img src="img/Sarah-olu.jpg" alt="">
+                    </div>
+                  <div class="t-write">
+                    <h2 class="t-name rightanim">Sarah Olu</h2>
+                    <p class="t-words rightanim">
+                        "Flying with Izy Air was seamless and professional from start to finish. The booking process was smooth, the aircraft immaculate, and the crew attentive to every detail. Their commitment to safety and comfort made the journey truly exceptional. Whether for business or leisure, they deliver excellence every time."
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="testimonial anim">
+                    <div class="testimonial-img">
+                        <img src="img/John-doe.jpg" alt="">
+                    </div>
+                  <div class="t-write">
+                    <h2 class="t-name rightanim">John Doe</h2>
+                    <p class="t-words rightanim">
+                      "The experience was fantastic!
+                      Highly recommend it to everyone."
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="testimonial anim">
+                    <div class="testimonial-img">
+                        <img src="img/Justin-smith.jpg" alt="">
+                    </div>
+                  <div class="t-write">
+                    <h2 class="t-name rightanim">Justin Smith</h2>
+                    <p class="t-words rightanim">
+                      "A truly remarkable journey with exceptional support. 
+                      Can't wait to come back again!"
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="controls anim">
+                  <button class="prev">❮</button>
+                  <button class="next">❯</button>
+                </div>
+              </div>
+        </div>
+        <div class="heading heading-line anim">Leave a message</div> 
+
+        <form action="submit" class="contact-form">
+            <div class="user-information anim">
+                <input class="input-field-small" type="text" name="firstname" placeholder="Firstname" required>
+                <input class="input-field-small" type="text" name="lastname" placeholder="Lastname" required>
+                <input class="input-field-small" type="email" name="email" placeholder="E-mail" required>
+    
+                <div class="form-row">
+                    <select id="country-code" class="input-field-small"></select>
+                    <input class="input-field-small" type="number" name="phone-number" placeholder="Phone number" required>
+                </div>
+    
+                <select id="country" class="input-field-small" name="country" required>
+                    <option value="">Select your country</option>
+                </select>
+    
+                <input class="input-field-small" type="number" name="zip-code" placeholder="ZIP" required>
+            </div>
+            <div class="user-message anim">
+                <textarea class="input-field-large" name="message" placeholder="Leave a message here (Optional)" rows="4" maxlength="450"></textarea>
+                <div class="checkbox-and-button">
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" name="marketing-consent" id="marketing-consent">
+                            <label for="marketing-consent">I agree to receive marketing emails from Izyair</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="privacy-policy-consent" id="privacy-policy-consent" required>
+                            <label for="privacy-policy-consent">I accept and agree to the <a href="" style="color: var(--color-red)">privacy policy</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-button">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>
+    <!--FOOTER ---->
+    <div class="footer anim">
+        <img src="img/izyair-logo-removebg-preview.png" id="footer-logo" alt="Izy Air">
+        <div id="cols">
+            <div class="firstcol leftanim">
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-location-dot"></i>
+                    <p class="footer-text">A Kinshasa Street Wuse Zone 6 Abuja, FCT Nigeria</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-phone"></i>
+                    <p class="footer-text">0816 207 3001 <br> 0705 299 9914</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-envelope"></i>
+                    <p class="footer-text">info@izyair.com</p>
+                </div>
+            </div>
+            <div class="secondcol anim">
+                <a href="index.html">Home</a>
+                <a href="http://">Our Company</a>
+                <a href="http://">Your fleet</a>
+                <a href="http://">Services</a>
+                <a href="http://">Bookings</a>
+                <a href="http://">Memberships</a>
+                <a href="http://">Career</a>
+                <a href="http://">Contact us</a>    
+            </div>
+            <div class="thirdcol rightanim">
+                <div class="icon-social">
+                    <a target="_blank" href="https://www.facebook.com/izyair/"><i id="f" class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href=""><i id="x" class="fa-brands fa-x-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/izyair/"><i id="i" class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="footer-text">
+                    &copy; 2025 Izyair Private Jet Charter. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer Ends Here--->
+</main>
+<script src="script.js"></script>
+</body>
+</html>
+
 
 <style>
     :root{
@@ -255,4 +390,4 @@
 }
 
 </style>
-<script src="script.js"></script>
+
