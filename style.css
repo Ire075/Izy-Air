@@ -12,9 +12,11 @@
     --form-back-color: #ffffff;
     --website-body-color:rgb(253, 253, 253);
     --website-dark-color: rgb(99, 99, 99);
+    --website-grey-l-color: #e4e0e0;
     --website-darkest-color: #1a1919;
     --light-text: #f5f0f0;
     --color-red: #c20d0d;
+    --color-red-hover: #d40c0c;
     --dark-text: #000;
     --website-grey-color: rgb(187, 184, 184);
     
@@ -37,6 +39,9 @@ h5{
 h2, .heading{
     font-size: 2rem;
     text-align: center;
+    font-weight: 200;
+}
+h3, li{
     font-weight: 200;
 }
 .heading-line{
@@ -250,7 +255,6 @@ nav.hidden {
     gap: 15%;
     width: 50%;
     padding: 2.5%;
-    background-color: var(--black-backgroung-color);
     color: var(--dark-text);
     border: 1px solid var(--website-dark-color);
 }
@@ -618,7 +622,7 @@ nav.hidden {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     h1{
         font-size: 2.8rem;
     }
