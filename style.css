@@ -16,9 +16,10 @@
     --website-darkest-color: #1a1919;
     --light-text: #f5f0f0;
     --color-red: #c20d0d;
-    --color-red-hover: #d40c0c;
+    --color-red-hover: #f10606;
     --dark-text: #000;
     --website-grey-color: rgb(187, 184, 184);
+    --background-2: #f8f9fa;
     
 }
 body{
@@ -248,7 +249,6 @@ nav.hidden {
 }
 
 .content-write .write-up{
-    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,7 +256,10 @@ nav.hidden {
     width: 50%;
     padding: 2.5%;
     color: var(--dark-text);
-    border: 1px solid var(--website-dark-color);
+    border: none;
+    text-align: left;  
+    color: var(--dark-text);
+    background: var(--background-2);
 }
 
 
@@ -574,6 +577,9 @@ nav.hidden {
     /***animation-timeline: view();
     animation-range: cover;***/
 }
+.animate {
+    animation: slideUp 0.5s ease-in-out;
+  }
 
 
 .hidden {
@@ -587,6 +593,18 @@ nav.hidden {
         opacity: 100%;
     }
 }
+@keyframes slideUp {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
 
 @keyframes leftanim {
     from{
@@ -637,7 +655,7 @@ nav.hidden {
         position: relative;
     }
     h2, .heading{
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         font-weight: 200;
     }

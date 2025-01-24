@@ -46,6 +46,10 @@ document.addEventListener('click', hideMenu);
 
 
 
+
+
+
+
 ////////////// TESTIMONIAL SLIDER CODE //////////////////////
 const testimonials = document.querySelectorAll('.testimonial');
 const prevBtn = document.querySelector('.prev');

@@ -11,3 +11,299 @@
     <link rel="stylesheet" href="style.css">
     <title>Izy Air | Contact Us</title>
 </head>
+
+<body>
+    <header style="background: url(img/Izy-air-staff-banner.png);background-position: center; background-size: cover;">
+        <nav id="navbar">
+            <button id="ph-menu-button">☰</button>
+            <div class="ph-menu hidden" id="ph-menu">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="services.html">Services</a>
+                <a href="your-fleet.html">Your Fleet</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Experience</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu  menu1 leftanim">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="services.html">Services</a>
+                <a href="your-fleet.html">Your Fleet</a>
+            </div>
+            <div id="logo" class="anim"><img src="img/izyair-logo-removebg-preview.png" alt=""></div>
+            <div class="menu menu2 rightanim">
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Experience</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+        </nav>
+        <div class="back-big anim">
+            <div class="leftanim">
+                <h1>Start your journey with us</h1>
+                <p>Reach out for inquiries, bookings, or assistance. We're here to provide seamless solutions for all your needs.
+                    <b>It’s the Izy Way.</b></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact-info-section">
+            <div class="contact-info-container leftanim">
+                <h1>Get in Touch</h1>
+                <p>Feel free to reach out for any inquiries, quotes, or assistance.</p>
+                <ul>
+                    <li><strong>Phone:</strong> <span>0816 207 3001</span> Or <span>0705 299 9914</span>  </li>
+                    <li><strong>Email:</strong> info@izyair.com</li>
+                    <li><strong>Address:</strong> A Kinshasa Street Wuse Zone 6 Abuja, FCT Nigeria</li>
+                    <li><strong>Operational Base:</strong> 1st Floor, A’Air Centrum, Nnamdi Azikiwe Int’l Airport, Abuja</li>
+                </ul>
+            </div>
+        </section>
+        <div class="social-cards anim">
+            <div class="social-card leftanim instagram">
+                <h3>Follow Us on Instagram</h3>
+                <p>Get exclusive updates, behind-the-scenes, and more.</p>
+                <a target="_blank" href="https://www.instagram.com/izyair/">Follow</a>
+            </div>
+            <div class="social-card rightanim x">
+                <h3>Follow the thread on X</h3>
+                <p>Join the conversation and stay up to date.</p>
+                <a target="_blank" href="https://x.com/Izy_Air">Follow</a>
+            </div>
+            <div class="social-card leftanim facebook">
+                <h3>Follow Us on Facebook</h3>
+                <p>Stay connected with our latest offers and events.</p>
+                <a target="_blank" href="https://www.facebook.com/izyair/">Follow</a>
+            </div>
+            <div class="social-card rightanim linkedin">
+                <h3>Connect with Us on LinkedIn</h3>
+                <p>Discover our professional updates and industry insights.</p>
+                <a target="_blank" href="https://www.linkedin.com/company/izy-air-ltd/">Follow</a>
+            </div>
+          </div>
+          
+
+    <!--   <div>
+            <h2>Operational Base</h2>
+            <div id="map"></div>
+            <p>1st Floor, A’Air Centrum, Nnamdi Azikiwe Int’l Airport, Abuja</p>
+        </div>
+    -->
+
+        <!---CONTACT SUBSCRIPTION FORM-->
+        <div class="heading heading-line anim">Leave a message</div> 
+
+        <form action="submit" class="contact-form">
+            <div class="user-information anim">
+                <input class="input-field-small" type="text" name="firstname" placeholder="Firstname" required>
+                <input class="input-field-small" type="text" name="lastname" placeholder="Lastname" required>
+                <input class="input-field-small" type="email" name="email" placeholder="E-mail" required>
+    
+                <div class="form-row">
+                    <select id="country-code" class="input-field-small"></select>
+                    <input class="input-field-small" type="number" name="phone-number" placeholder="Phone number" required>
+                </div>
+    
+                <select id="country" class="input-field-small" name="country" required>
+                    <option value="">Select your country</option>
+                </select>
+    
+                <input class="input-field-small" type="number" name="zip-code" placeholder="ZIP" required>
+            </div>
+            <div class="user-message anim">
+                <textarea class="input-field-large" name="message" placeholder="Leave a message here (Optional)" rows="4" maxlength="450"></textarea>
+                <div class="checkbox-and-button">
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" name="marketing-consent" id="marketing-consent">
+                            <label for="marketing-consent">I agree to receive marketing emails from Izyair</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="privacy-policy-consent" id="privacy-policy-consent" required>
+                            <label for="privacy-policy-consent">I accept and agree to the <a href="" style="color: var(--color-red)">privacy policy</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-button">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>
+
+    <!--FOOTER ---->
+    <div class="footer anim">
+        <img src="img/izyair-logo-removebg-preview.png" id="footer-logo" alt="Izy Air">
+        <div id="cols">
+            <div class="firstcol leftanim">
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-location-dot"></i>
+                    <p class="footer-text">A Kinshasa Street Wuse Zone 6 Abuja, FCT Nigeria</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-phone"></i>
+                    <p class="footer-text">0816 207 3001 <br> 0705 299 9914</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-envelope"></i>
+                    <p class="footer-text">info@izyair.com</p>
+                </div>
+            </div>
+            <div class="secondcol anim">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="your-fleet.html">Your fleet</a>
+                <a href="services.html">Services</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Expeirance</a>
+                <a href="careers.html">Career</a>
+                <a href="contact.html">Contact us</a>     
+            </div>
+            <div class="thirdcol rightanim">
+                <div class="icon-social">
+                    <a target="_blank" href="https://www.facebook.com/izyair/"><i id="f" class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://x.com/Izy_Air"><i id="x" class="fa-brands fa-x-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/izyair/"><i id="i" class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/izy-air-ltd/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-text">
+                    &copy; 2025 Izyair Private Jet Charter. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer Ends Here--->
+    
+    <script src="script.js"></script>
+
+
+
+
+    <style>
+        :root{
+            --form-back-color: #ffffff;
+            --website-body-color:rgb(253, 253, 253);
+            --website-dark-color: rgb(99, 99, 99);
+            --website-grey-l-color: #e4e0e0;
+            --website-darkest-color: #1a1919;
+            --light-text: #f5f0f0;
+            --color-red: #c20d0d;
+            --color-red-hover: #f10606;
+            --dark-text: #000;
+            --website-grey-color: rgb(187, 184, 184);
+            --background-2: #f8f9fa;
+        }
+        /* Contact Info Section */
+        .contact-info-section{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-info-container {
+            width: 80vw;
+            padding: 3% 6%;
+            margin: 10vh;
+            background-color: var(--website-grey-l-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-info-container h1 {
+            font-weight: 200;
+            margin-bottom: 10px;
+            color: var(--color-red);
+        }
+
+        .contact-info-container p {
+            margin-bottom: 15px;
+            color: var(--dark-text)
+        }
+
+        .contact-info-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info-container li {
+            margin-bottom: 10px;
+            
+        }
+
+        .contact-info-container li strong {
+            color: var(--color-red);
+            font-weight: bold;
+        }
+        #map {
+            height: 70vh; /* Set the height of the map */
+            width: 100vw;   /* Full-width map */
+        }
+        /* SOCIAL CARDS */
+
+        .social-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 5% 2.5%;
+            background-color: var(--website-grey-l-color);
+            margin-bottom: 5vh;
+        }
+
+        .social-card {
+            border-radius: 12px;
+            padding: 20px;
+            color: var(--dark-text);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .social-card h3 {
+            font-size: 1.2rem;
+            color: var(--color-red)
+        }
+
+        .social-card p {
+            margin: 8%  15px;
+            color: var(--dark-text);
+        }
+        .social-card a{
+            color: var(--light-text);
+            padding: 3% 10%;
+            background-color: var(--color-red);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .social-card a:hover {
+            background-color: var(--color-red-hover);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Individual card styles */
+        .instagram {
+            background-color: var(--form-back-color);
+        }
+
+        .facebook {
+            background-color: var(--form-back-color);
+        }
+
+        .x {
+            background-color: var(--form-back-color);
+        }
+
+        .linkedin {
+            background-color: var(--form-back-color);
+        }
+    </style>
+</body>
+</html>
