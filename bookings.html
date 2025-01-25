@@ -9,5 +9,511 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Izy Air | Private Jet Charter</title>
+    <title>Izy Air | Book a Jet</title>
 </head>
+<body>
+    <header style="background: url(img/Izy-air-main-backdrop-4.webp);background-position: center; background-size: cover;">
+        <nav id="navbar">
+            <button id="ph-menu-button">☰</button>
+            <div class="ph-menu hidden" id="ph-menu">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="services.html">Services</a>
+                <a href="your-fleet.html">Your Fleet</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Experience</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu  menu1 leftanim">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="services.html">Services</a>
+                <a href="your-fleet.html">Your Fleet</a>
+            </div>
+            <div id="logo" class="anim"><img src="img/izyair-logo-removebg-preview.png" alt=""></div>
+            <div class="menu menu2 rightanim">
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Experience</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+        </nav>
+        <div class="back-big anim">
+            <div class="leftanim">
+                <h1>Reserve Your Private Jet Now</h1>
+                <p>Plan your next journey with ease. Select your departure, destination, and schedule your flight, and we’ll handle the rest. Experience seamless booking, unparalleled service, and a tailored travel experience that suits your needs.
+                    <b>It’s the Izy Way.</b></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="why-choose-us">
+        <div class="why-choose-container">
+          <h2>Why Choose Us</h2>
+          <p class="intro-text">
+            Discover why we are the preferred choice for private jet charters. Our commitment to excellence ensures your journey is nothing short of extraordinary.
+          </p>
+          <div class="features-grid">
+            <!-- Card 1: 24/7 Booking Assistance -->
+            <div class="feature-card leftanim">
+              <h3>24/7 Booking Assistance</h3>
+              <p>
+                Our dedicated team is available around the clock to assist you with bookings, inquiries, and last-minute requests.
+              </p>
+            </div>
+      
+            <!-- Card 2: Unparalleled Safety -->
+            <div class="feature-card anim">
+              <h3>Unparalleled Safety Standards</h3>
+              <p>
+                Fly with confidence, knowing that we meet the highest safety certifications and employ experienced, vetted pilots.
+              </p>
+            </div>
+      
+            <!-- Card 3: Customized Luxury Experience -->
+            <div class="feature-card rightanim">
+              <h3>Customized Luxury Experience</h3>
+              <p>
+                Enjoy a tailored journey with personalized amenities, catering, and onboard services designed to exceed your expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="booking-form anim">
+        <div class="form-container">
+          <h2>Book Your Private Jet</h2>
+          <p class="form-intro">
+            Fill out the form below to book your flight. We’ll tailor your journey to perfection, ensuring every detail is covered.
+          </p>
+      
+          <form action="/submit-booking" method="POST">
+            <!-- Flight Details -->
+            <fieldset class="leftanim">
+              <legend>Flight Details</legend>
+              <div class="form-group">
+                <label for="departure">Departure Location</label>
+                <input type="text" id="departure" name="departure" placeholder="City, Airport Code, or Location" required>
+              </div>
+              <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" placeholder="City, Airport Code, or Location" required>
+              </div>
+              <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date (Optional)</label>
+                <input type="date" id="return-date" name="return-date">
+              </div>
+              <div class="form-group">
+                <label for="flight-type">Flight Type</label>
+                <select id="flight-type" name="flight-type" required>
+                  <option value="" disabled selected>Select Flight Type</option>
+                  <option value="one-way">One-Way</option>
+                  <option value="round-trip">Round-Trip</option>
+                </select>
+              </div>
+            </fieldset>
+      
+            <!-- Passenger Information -->
+            <fieldset class="leftanim">
+              <legend>Passenger Information</legend>
+              <div class="form-group">
+                <label for="passengers">Number of Passengers</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="20" placeholder="Enter number" required>
+              </div>
+              <div class="form-group">
+                <label for="passport">Passport Details</label>
+                <textarea id="passport" name="passport" placeholder="Include passport numbers for international flights" required></textarea>
+              </div>
+            </fieldset>
+      
+            <!-- Contact Details -->
+            <fieldset class="leftanim">
+              <legend>Contact Information</legend>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number (with country code)" required>
+              </div>
+            </fieldset>
+      
+            <!-- Additional Services -->
+            <fieldset class="leftanim ">
+              <legend>Additional Services</legend>
+              <div class="form-group">
+                <label for="aircraft-type">Aircraft Type</label>
+                <select id="aircraft-type" name="aircraft-type" required>
+                  <option value="" disabled selected>Select Aircraft Type</option>
+                  <option value="light-jet">Light Jet</option>
+                  <option value="midsize-jet">Midsize Jet</option>
+                  <option value="heavy-jet">Heavy Jet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="special-requests">Special Requests</label>
+                <textarea id="special-requests" name="special-requests" placeholder="E.g., catering, pets, accessibility, etc."></textarea>
+              </div>
+            </fieldset>
+      
+            <!-- Submit Button -->
+            <div class="form-actions">
+              <button type="submit">Submit Booking</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      
+      <section id="how-it-works">
+        <div class="how-it-works-container">
+          <h2>How It Works</h2>
+          <p class="intro-text">
+            Booking your private jet has never been easier. Follow these simple steps to enjoy a seamless and luxurious journey.
+          </p>
+      
+          <div class="features-grid">
+            <!-- Step 1: Request a Quote -->
+            <div class=" feature-card">
+              <h3>Request a Quote</h3>
+              <p>
+                Fill in your travel details and preferences, and we’ll prepare a personalized quote tailored to your needs.
+              </p>
+            </div>
+      
+            <!-- Step 2: Confirm Your Flight -->
+            <div class=" feature-card">
+              <h3>Confirm Your Flight</h3>
+              <p>
+                Review your quote, confirm your booking, and finalize all the details with our 24/7 support team.
+              </p>
+            </div>
+      
+            <!-- Step 3: Take Off -->
+            <div class=" feature-card">
+              <h3>Take Off</h3>
+              <p>
+                Sit back, relax, and enjoy a luxurious flight experience to your destination with top-tier service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="heading heading-line anim">Leave a message</div> 
+
+        <form action="submit" class="contact-form">
+            <div class="user-information anim">
+                <input class="input-field-small" type="text" name="firstname" placeholder="Firstname" required>
+                <input class="input-field-small" type="text" name="lastname" placeholder="Lastname" required>
+                <input class="input-field-small" type="email" name="email" placeholder="E-mail" required>
+    
+                <div class="form-row">
+                    <select id="country-code" class="input-field-small"></select>
+                    <input class="input-field-small" type="number" name="phone-number" placeholder="Phone number" required>
+                </div>
+    
+                <select id="country" class="input-field-small" name="country" required>
+                    <option value="">Select your country</option>
+                </select>
+    
+                <input class="input-field-small" type="number" name="zip-code" placeholder="ZIP" required>
+            </div>
+            <div class="user-message anim">
+                <textarea class="input-field-large" name="message" placeholder="Leave a message here (Optional)" rows="4" maxlength="450"></textarea>
+                <div class="checkbox-and-button">
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" name="marketing-consent" id="marketing-consent">
+                            <label for="marketing-consent">I agree to receive marketing emails from Izyair</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="privacy-policy-consent" id="privacy-policy-consent" required>
+                            <label for="privacy-policy-consent">I accept and agree to the <a href="" style="color: var(--color-red)">privacy policy</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-button">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>
+
+
+    <!--FOOTER ---->
+    <div class="footer anim">
+        <img src="img/izyair-logo-removebg-preview.png" id="footer-logo" alt="Izy Air">
+        <div id="cols">
+            <div class="firstcol leftanim">
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-location-dot"></i>
+                    <p class="footer-text">A Kinshasa Street Wuse Zone 6 Abuja, FCT Nigeria</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-phone"></i>
+                    <p class="footer-text">0816 207 3001 <br> 0705 299 9914</p>
+                </div>
+                <div class="icon-net">
+                    <i class="icon-net0 fa-solid fa-envelope"></i>
+                    <p class="footer-text">info@izyair.com</p>
+                </div>
+            </div>
+            <div class="secondcol anim">
+                <a href="index.html">Home</a>
+                <a href="our-company.html">Our Company</a>
+                <a href="your-fleet.html">Your fleet</a>
+                <a href="services.html">Services</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="experience.html">Experience</a>
+                <a href="careers.html">Career</a>
+                <a href="contact.html">Contact us</a>     
+            </div>
+            <div class="thirdcol rightanim">
+                <div class="icon-social">
+                    <a target="_blank" href="https://www.facebook.com/izyair/"><i id="f" class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://x.com/Izy_Air"><i id="x" class="fa-brands fa-x-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/izyair/"><i id="i" class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/izy-air-ltd/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-text">
+                    &copy; 2025 Izyair Private Jet Charter. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer Ends Here--->
+
+    <script src="script.js"></script>
+
+    <style>
+
+        :root{
+            --form-back-color: #ffffff;
+            --website-body-color:rgb(253, 253, 253);
+            --website-dark-color: rgb(99, 99, 99);
+            --website-grey-l-color: #e4e0e0;
+            --website-darkest-color: #1a1919;
+            --light-text: #f5f0f0;
+            --color-red: #c20d0d;
+            --color-red-hover: #f10606;
+            --dark-text: #000;
+            --website-grey-color: rgb(187, 184, 184);
+            --background-2: #f8f9fa;
+            
+        }
+                /* Why Choose Us Section Styles */
+        #why-choose-us {
+            padding: 80px 20px;
+            background-color: #f8f9fa; /* Light neutral background */
+        }
+
+        .why-choose-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .why-choose-container h2 {
+            font-size: 2.8rem;
+            color: var(--color-red); 
+            margin-bottom: 20px;
+        }
+
+        .why-choose-container .intro-text {
+            font-size: 1.2rem;
+            color: var(--website-dark-color); /* Neutral text color */
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        /* Individual Feature Cards */
+        .feature-card {
+            background-color: #ffffff; /* Clean white card */
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card .icon {
+            margin-bottom: 20px;
+        }
+
+        .feature-card .icon img {
+            max-width: 60px;
+            height: auto;
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            color: var(--color-red); /* Orange accent for titles */
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 1.1rem;
+            color: #555; /* Neutral text color */
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr; /* Single column layout */
+            }
+
+            .feature-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .feature-card p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Booking Form Section */
+        #booking-form {
+            padding: 60px 20px;
+            background-color: var(--background-2); /* Light background */
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #booking-form h2 {
+            font-size: 2.4rem;
+            color: var(--color-red); 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-intro {
+            text-align: center;
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        form fieldset {
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        legend {
+            font-size: 1.4rem;
+            color: var(--color-red);
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        #booking-form label {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        #booking-form input,
+        #booking-form select,
+        #booking-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        #booking-form textarea {
+            resize: vertical;
+        }
+
+        #booking-form input:focus,
+        #booking-form select:focus,
+        #booking-form textarea:focus {
+            border-color: var(--color-red);
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 80, 80, 0.3);
+        }
+
+        #booking-form .form-actions {
+            text-align: center;
+        }
+
+        #booking-form button {
+            background-color: var(--color-red); /* Orange accent */
+            color: #ffffff;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #booking-form button:hover {
+            background-color: var(--color-red-hover);
+        }
+
+
+        /* How It Works Section */
+#how-it-works {
+  padding: 80px 20px;
+  background-color: #f8f9fa; /* Light neutral background */
+}
+
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-it-works-container h2 {
+  font-size: 2.8rem;
+  color: var(--color-red); /* Elegant dark blue */
+  margin-bottom: 20px;
+}
+
+.how-it-works-container .intro-text {
+  font-size: 1.2rem;
+  color: var(--dark-text); /* Neutral text color */
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+    </style>
+</body>
+</html>
