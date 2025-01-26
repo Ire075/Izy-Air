@@ -392,6 +392,26 @@ nav.hidden {
     scale: 1.05;
 }
 
+
+.oth-booking{
+    height: 25vh;
+    width: 100vw;
+    background-color: var(--website-grey-color);
+    margin: 10vh 0;
+    display: grid;
+    place-items: center;
+}
+.oth-booking a{
+    color: var(--light-text);
+    padding: 1.5% 7%;
+    background-color: var(--color-red);
+}
+
+.oth-booking a:hover{
+    scale: 1.03;
+    background-color: var(--color-red-hover);
+}
+
 /****************************CONTACT FORM (Leave a message)***************/
 .contact-form{
     padding: 2.5% 10%;
